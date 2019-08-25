@@ -9,6 +9,8 @@
     <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
     <link href='Css/blog1.css' rel='stylesheet' type='text/css'>
     <script src='Script\bootstrap.min.js'></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Bridescall</title>
 </head>
 
@@ -55,16 +57,17 @@
                     </div>
                     <div class="ml-auto">
                         <ul class="nav navbar-nav">
-                            <li><a class="nav-link btnaboutus"
+                            <li><a class="nav-link btnaboutus navibar"
                                     style="margin-right: 20px;color:#424242;font-family: muli;font-weight:bold;font-size: 14px;letter-spacing: -1px;"
                                     href="404.html">ABOUT US</a></li>
-                            <li><a class="nav-link btnblog"
+                            <li><a class="nav-link btnblog navibar"
                                     style="margin-right: 20px;color:#F5989D;font-family: muli;font-weight:bold;font-size: 14px;letter-spacing: -1px;"
                                     href="contact.html">BLOG</a></li>
-                            <li><a class="nav-link btnevents" 
+                            <li><a class="nav-link btnevents navibar"
                                     style="margin-right: 20px;color:#424242;font-family: muli ;font-weight:bold;font-size: 14px;letter-spacing: -1px;"
-                                    href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">EVENTS</a></li>
-                            <li><a class="nav-link btncontact"
+                                    href="https://www.facebook.com/sharer/sharer.php?u=example.org"
+                                    target="_blank">EVENTS</a></li>
+                            <li><a class="nav-link btncontact navibar"
                                     style="margin-right: 20px;color:#424242;font-family: muli;font-weight:bold;font-size: 14px;letter-spacing: -1px;"
                                     href="contact.html">CONTACT US</a></li>
                         </ul>
@@ -80,25 +83,27 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid" data-aos="fade-in">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12 text-center align-items-center">
                     <img src="Image/leaf.png" class="img-fluid mx-auto"
                         style="width:120px;display:block;margin-top:10px;">
-                    <label class="pblogtitle">Ways to Mentally and Emotionally Prepare for the Wedding Day</label>
-                    <p class="pauthor">Alfon</p>
-                    <p class="pblogdate">18th August 2018</p>
+                    <label class="pblogtitle">Ways to Mentally and Emotionally Prepare for the Wedding Day</label><Br>
+                    <label class="pauthor" style = "margin-right: 15px;"><img src = "Image/author.png" style = "margin-right: 5px;width:20px;">Blog by <span style = "color: #F5989D;">Alfon Labadan</span></label>
+                    <label class="pauthor" style = "margin-right: 15px;"><img src = "Image/timer.png" style = "margin-right: 5px;width:20px;">3min read</label>
+                    <label class="pblogdate">Published 10/12/19</label>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container" data-aos="fade-in">
             <div class="row" style="margin-top:40px;">
                 <div class="col-lg-12 text-center">
                     <div class="form-group" style="position:relative;">
                         <img src="Image/dp.jpeg" class="img-fluid"
-                            style="border-radius: 50px;width:90px;position:absolute;left:46.4%;top:-5%;padding:8px;background-color: #fafafa;">
-                        <img src="Image/try.jpg" class="img-fluid" style="border-radius: 5px;">
+                            style="border-radius: 50px;width:90px;position:absolute;left:46.4%;top:-5%;padding:5px;background-color: #fafafa;">
+                        <img src="Image/try.jpg" class="img-fluid" style="border-radius: 5px;-webkit-box-shadow: 1px 1px 15px -7px #000000; 
+                        box-shadow: 1px 1px 17px -7px #000000;">
                     </div>
                 </div>
             </div>
@@ -152,37 +157,48 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container concard">
             <div class="row">
                 <div class="col-lg-12 text-center" style="margin-top:40px;">
                     <img src="Image/leaf.png" class="img-fluid" style="width:120px;margin-top:20px;">
                     <p class="prelated">Related blogs</p>
                 </div>
-                <div class="col-lg-12" style = margin-top:10px;>
+                <div class="col-lg-12" style=margin-top:10px;>
                     <div class="card-deck">
-                        <div class="card">
-                            <img class="card-img-top" src="Image/bg.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-title">June 18, 2019</p>
-                                <p class="card-text">Microweddings as a Means to a More Intentional Wedding
-                                </p>
-                                <p class="card-text"><small class="text-muted">Read more</small></p>
+                        <div class="card text-center" style="background-color: #fafafa;border: 0px;">
+                            <div class="form-group ">
+                                <img class="card-img-top" src="Image/bg.jpg" alt="Card image cap" style="-webkit-box-shadow: 1px 1px 15px -7px #000000; 
+                                box-shadow: 1px 1px 17px -7px #000000; cursor: pointer;">
+                                <img src="Image/dp.jpeg" class="img-fluid mx-auto"
+                                    style="width: 70px;border-radius: 50px;margin-top:-40px;padding:5px;background-color: white;">
                             </div>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="Image/bg1.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">June 25, 2019</h5>
+                            <div class="card-body" style="margin-top:-15px;">
                                 <p class="card-text">Simple 5-Step Process to Writing Your Wedding Vows</p>
-                                <p class="card-text"><small class="text-muted">Read more</small></p>
+                                <p class="card-desc">Check out our short guide to composing a sweet declaration of
+                                    forever</p>
+                                <hr class="hrheader" style="background-color: #F5989D;width: 30px;margin-top:10px;">
+                                <p class="card-text" style="margin-top:-15px;"><small class="text-muted">March 15,
+                                        2019</small></p>
+                                <p class="card-text" style="margin-top:-8px;"><small class="text-muted">by Alfon
+                                        Labadan</small></p>
                             </div>
                         </div>
-                        <div class="card">
-                            <img class="card-img-top" src="Image/bg3.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">July 29, 2019</h5>
-                                <p class="card-text">Honeymoon Destinations for the Adventurous Couple</p>
-                                <p class="card-text"><small class="text-muted">Read more</small></p>
+                        <div class="card text-center" style="background-color: #fafafa;border: 0px;">
+                            <div class="form-group ">
+                                <img class="card-img-top" src="Image/bg1.jpg" alt="Card image cap" style="-webkit-box-shadow: 1px 1px 15px -7px #000000; 
+                            box-shadow: 1px 1px 17px -7px #000000; cursor: pointer;">
+                                <img src="Image/dp1.jpg" class="img-fluid mx-auto"
+                                    style="width: 70px;border-radius: 50px;margin-top:-40px;padding:5px;background-color: white;">
+                            </div>
+                            <div class="card-body" style="margin-top:-15px;">
+                                <p class="card-text">Microweddings as a Means to a More Intentional Wedding</p>
+                                <p class="card-desc">“Micro” and “wedding” might be a tricky concept to grasp for a lot
+                                    of Filipino couples.</p>
+                                <hr class="hrheader" style="background-color: #F5989D;width: 30px;margin-top:10px;">
+                                <p class="card-text" style="margin-top:-15px;"><small class="text-muted">Jun 18,
+                                        2019</small></p>
+                                <p class="card-text" style="margin-top:-8px;"><small class="text-muted">by
+                                        Justin</small></p>
                             </div>
                         </div>
                     </div>
@@ -190,13 +206,54 @@
             </div>
         </div>
     </div>
-    <div class = "container-fluid" style = "background-color: #313131;">
-        <div class = "row" style = "margin-top: 70px;">
-            <div class = "col-lg-12 text-center">
-                <img src = "Image/logo.png" class = "img-fluid mx-auto" style = "width: 200px;margin-top:70px;">
+    <div class="container">
+        <div class="row" style = "margin-top: 30px;">
+            <div class="col-lg-12">
+                <hr class="hrheader">
+            </div>
+        </div>
+        <div class="row" style="margin-top:20px;padding-bottom: 20px;">
+            <div class="col-lg-4">
+                <img src="Image/logo.png" class="img-fluid d-inline-block align-top" style="width:200px;">
+                <p class="pfooterabout">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+            <div class="col-lg-3">
+                <p class="pfootertitle">Questions?</p>
+                <div class="form-inline">
+                    <img src="Image/mail.png">
+                    <p class="pfootersubtitle" style="margin-top:14px;margin-left: 5px;">Drop us a line at:</p>
+                </div>
+                <p class="pemail">bridescall@gmail.com</p>
+                <hr class="hrheader" style="margin-top:-5px;">
+                <div class="form-inline" style="margin-top:-5px;">
+                    <img src="Image/cell.png">
+                    <p class="pfootersubtitle" style="margin-top:14px;margin-left: 5px;">Call:</p>
+                </div>
+                <p class="pemail">09865878595</p>
+            </div>
+            <div class="col-lg-3">
+                <p class="pfootertitle">Bridescall</p>
+                <p class="pfootersubtitle">Home</p>
+                <p class="pfootersubtitle">Blogs</p>
+                <p class="pfootersubtitle">Registry</p>
+                <p class="pfootersubtitle">Shop</p>
+            </div>
+            <div class="col-lg-2">
+                <p class="pfootertitle">Follow us</p>
+                <div class  = "form-inline">
+                    <img src = "Image/facebook.png" class = "img-fluid" style = "margin-right: 5px;">
+                    <img src = "Image/twitter.png" class = "img-fluid" style = "margin-right: 5px;">
+                    <img src = "Image/instagram.png" class = "img-fluid" style = "margin-right: 5px;">
+                </div>
             </div>
         </div>
     </div>
+
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>

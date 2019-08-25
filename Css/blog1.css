@@ -3,11 +3,13 @@
         max-width: 1300px !important;
     }
 }
+
 @media only screen and (min-width: 1200px) {
-    .condesc {
+    .condesc, .concard {
         max-width: 900px !important;
     }
 }
+
 body, html {
     width: 100%;
     height: 100vh;
@@ -16,31 +18,64 @@ body, html {
     background-color: #FAFAFA
 }
 
+.navibar {
+    transition: all 0.2s;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+    font-family: hind semibold;
+}
+
+.navibar:hover {
+    cursor: pointer;
+    color: #F06292 !important;
+    transition: all 0.2s;
+}
+
+.navibar::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: #ffffff .3s;
+    font-family: hind semibold;
+}
+
+.navibar:hover::after {
+    width: 100%;
+    transition: width .3s;
+    font-family: hind semibold;
+}
+
 .btnlogin {
     background-color: #F5989D;
-    color :White;
+    color: White;
     padding: 7px 30px !important;
     border-radius: 5px;
     font-family: hind;
     transition: all 0.2s;
     cursor: pointer;
-    margin-right:27px;
+    margin-right: 27px;
 }
+
 .btnlogin:hover {
     background-color: #F06292;
     color: white !important;
 }
+
 .badge {
-    background-color: #EC407A;
+    background-color: #F5989D;
     font-family: muli;
     font-weight: normal;
     margin-left: 10px;
-    font-size:13px;
-    visibility: hidden;
+    font-size: 13px;
+    margin-top: -5px;
 }
 
 .hrheader {
-    width: 97%;
+    width: 100%;
     height: 2px;
     margin-left: auto;
     margin-right: auto;
@@ -59,22 +94,23 @@ body, html {
 .pauthor {
     font-family: muli;
     letter-spacing: -1px;
-    color: #424242;
+    color: #757575;
     font-weight: bold;
-    margin-top:15px;
+    margin-top: 15px;
 }
 
 .pblogdate {
     font-family: muli;
     color: #757575;
-    font-size:15px;
-    margin-top:-10px;
+    font-size: 15px;
+    margin-top: -10px;
+    font-weight: bold;
 }
 
 .pdesc {
     font-family: hind;
     color: #424242;
-    font-size: 17px; 
+    font-size: 17px;
 }
 
 .subhead:first-child:first-letter {
@@ -89,9 +125,9 @@ body, html {
 }
 
 .pbloghead {
-    color: #212121;
+    color: #F5989D;
     font-size: 30px;
-    margin-top:50px;
+    margin-top: 50px;
     border-left: 3px solid #EC407A;
     font-family: mermaid;
     padding-left: 20px;
@@ -106,29 +142,68 @@ body, html {
 
 .prelated {
     font-family: muli semibold;
-    font-size:25px;
+    font-size: 25px;
     color: #212121;
     letter-spacing: -1px;
-    margin-top:10px;
-}
-
-.card-title {
-    font-family: muli;
-    font-size:14px;
-    color: #616161;
-    letter-spacing: -1px;
+    margin-top: 10px;
 }
 
 .card-text {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size:15px;
+    font-family: hind semibold;
+    font-size: 18px;
     color: #212121;
+    margin: 0px;
+}
+
+.card-desc {
+    font-family: hind;
+    font-size: 15px;
+    color: #424242;
+    margin-top: 5px;
 }
 
 .text-muted {
-    font-family: muli ;
-    color: #EC407A !important;
-    font-size:13px;
+    font-family: hind;
+    font-size: 13px;
+    font-weight: normal !important;
+    color: #424242;
+}
+
+.pfootertitle {
+    color: #424242;
+    font-family: muli;
+    font-weight: bold;
+    font-size: 15px;
     letter-spacing: -1px;
+    margin-right: 70px;
+
+}
+
+.pfootersubtitle {
+    font-family: hind;
+    font-size: 15px;
+    color: #757575;
     cursor: pointer;
+}
+
+.pfootersubtitle:hover {
+    transition: all 0.2s;
+    color: #F06292;
+}
+
+.pfooterabout {
+    font-family: muli;
+    font-size: 15px;
+    letter-spacing: -1px;
+    color: #757575;
+    margin-top:20px;
+}
+
+.pemail {
+    font-size: 15px;
+    font-family: muli;
+    letter-spacing: -1px;
+    color: #F5989D;
+    margin-left: 30px;
+    margin-top:-10px;
 }
