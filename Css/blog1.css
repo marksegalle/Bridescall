@@ -5,7 +5,13 @@
 }
 
 @media only screen and (min-width: 1200px) {
-    .condesc, .concard {
+    .condesc {
+        max-width: 900px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .concard {
         max-width: 900px !important;
     }
 }
@@ -81,6 +87,14 @@ body, html {
     margin-right: auto;
     background-color: #E0E0E0;
     border: 0 none;
+}
+
+.lblshare {
+    font-family: muli semibold !important;
+    letter-spacing: -1px;
+    color: #424242;
+    font-size:15px;
+    margin-top: 40px;
 }
 
 .pblogtitle {
@@ -176,7 +190,6 @@ body, html {
     font-size: 15px;
     letter-spacing: -1px;
     margin-right: 70px;
-
 }
 
 .pfootersubtitle {
@@ -196,7 +209,7 @@ body, html {
     font-size: 15px;
     letter-spacing: -1px;
     color: #757575;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 .pemail {
@@ -205,5 +218,5 @@ body, html {
     letter-spacing: -1px;
     color: #F5989D;
     margin-left: 30px;
-    margin-top:-10px;
+    margin-top: -10px;
 }
