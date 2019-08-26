@@ -1,0 +1,160 @@
+@media only screen and (min-width: 1200px) {
+    .con {
+        max-width: 1300px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .condesc {
+        max-width: 900px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .concard {
+        max-width: 900px !important;
+    }
+}
+
+body, html {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #FAFAFA
+}
+
+.navibar {
+    transition: all 0.2s;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+    font-family: hind semibold;
+}
+
+.navibar:hover {
+    cursor: pointer;
+    color: #F06292 !important;
+    transition: all 0.2s;
+}
+
+.navibar::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: #ffffff .3s;
+    font-family: hind semibold;
+}
+
+.navibar:hover::after {
+    width: 100%;
+    transition: width .3s;
+    font-family: hind semibold;
+}
+
+.btnlogin {
+    background-color: #F5989D;
+    color: White;
+    padding: 7px 30px !important;
+    border-radius: 5px;
+    font-family: hind;
+    transition: all 0.2s;
+    cursor: pointer;
+    margin-right: 27px;
+}
+
+.btnlogin:hover {
+    background-color: #F06292;
+    color: white !important;
+}
+
+.badge {
+    background-color: #F5989D;
+    font-family: muli;
+    font-weight: normal;
+    margin-left: 10px;
+    font-size: 13px;
+    margin-top: -5px;
+}
+
+.hrheader {
+    width: 100%;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E0E0E0;
+    border: 0 none;
+}
+
+.pnew {
+    font-family: muli semibold;
+    font-size: 15px;
+    letter-spacing: -0.5px;
+    color: white;
+    padding: 5px 10px;
+    background-color: #F5989D;
+    width: max-content;
+    border-radius: 5px;
+}
+
+.pnewtitle {
+    font-family: mermaid;
+    font-size: 35px;
+    color: #424242;
+    margin-top:-5px;
+}
+
+.pnewtitlesub {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: #9E9E9E;
+    font-style: italic;
+}
+
+.preadarticle {
+    font-family: muli;
+    font-size: 15px;
+    letter-spacing: -0.5px;
+    color: #F5989D;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+}
+
+.preadarticle:hover {
+    text-decoration: underline;
+}
+
+.pthismonth {
+    font-family: muli semibold;
+    letter-spacing: -0.5px;
+    font-size: 15px;
+    color: #F5989D;
+}
+
+.pthismonthlabel {
+    font-family: muli;
+    letter-spacing: -0.5px;
+    font-size: 12px;
+    color: #757575;
+    font-weight: bold;
+}
+
+.pthismonthlabeldesc {
+    font-family: muli;
+    letter-spacing: -0.5px;
+    font-size:15px;
+    color: #424242;
+    font-weight: bold;
+}
+
+.pthismonthauthor {
+    font-family: muli;
+    letter-spacing: -0.5px;
+    font-size: 13px;
+    color: #757575;
+    font-weight: bold;
+}
