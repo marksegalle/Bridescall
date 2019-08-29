@@ -89,6 +89,13 @@ body, html {
     border: 0 none;
 }
 
+.pdate {
+    font-family: muli semibold;
+    letter-spacing: -0.5px;
+    color: #424242;
+    font-size: 15px;
+}
+
 .pnew {
     font-family: muli semibold;
     font-size: 15px;
@@ -100,11 +107,33 @@ body, html {
     border-radius: 5px;
 }
 
+.ptitle {
+    font-family: mermaid;
+    font-size: 35px;
+    color: #424242;
+}
+
+.ptitledesc {
+    font-family: muli semibold;
+    font-size: 15px;
+    color: #616161;
+}
+
 .pnewtitle {
     font-family: mermaid;
     font-size: 35px;
     color: #424242;
-    margin-top:-5px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.pnewtitle:hover {
+    transition: all 0.2s;
+    color: #F5989D;
 }
 
 .pnewtitlesub {
@@ -146,9 +175,15 @@ body, html {
 .pthismonthlabeldesc {
     font-family: muli;
     letter-spacing: -0.5px;
-    font-size:15px;
+    font-size: 15px;
     color: #424242;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.pthismonthlabeldesc:hover {
+    transition: all 0.2s;
+    color: #F5989D;
 }
 
 .pthismonthauthor {
@@ -157,4 +192,232 @@ body, html {
     font-size: 13px;
     color: #757575;
     font-weight: bold;
+}
+
+/* Card design */
+
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
+:root {
+    --color: #F5989D;
+    --transition-time: 0.5s;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.cards-wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    width: max-content;
+}
+
+.card-blog {
+    font-family: 'Heebo';
+    --bg-filter-opacity: 0.5;
+    height: 20em;
+    width: 18em;
+    color: white;
+    border-radius: 5px;
+    padding: 1em;
+    /*margin: 2em;*/
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    transition: all, var(--transition-time);
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    -webkit-box-shadow: 1px 1px 15px -7px #000000;
+    box-shadow: 1px 1px 15px -7px #000000;
+}
+
+.card-blog:hover {
+    transform: rotate(0);
+}
+
+.card-blog h1 {
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    font-family: mermaid;
+}
+
+.card-blog p {
+    font-size: 0.75em;
+    font-family: muli;
+    letter-spacing: -0.5px;
+    margin-top: 0.5em;
+    line-height: 1.5em;
+}
+
+.card-blog .date {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.75em;
+    padding: 1em;
+    line-height: 1em;
+    opacity: .8;
+    font-family: muli semibold;
+    letter-spacing: -0.5px;
+}
+
+.card-blog:before, .card-blog:after {
+    content: '';
+    transform: scale(0);
+    transform-origin: top left;
+    border-radius: 50%;
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    z-index: -5;
+    transition: all, var(--transition-time);
+    transition-timing-function: ease-in-out;
+}
+
+.card-blog:before {
+    background: #ddd;
+    width: 250%;
+    height: 250%;
+}
+
+.card-blog:after {
+    background: white;
+    width: 200%;
+    height: 200%;
+}
+
+.card-blog:hover {
+    color: var(--color);
+}
+
+.card-blog:hover:before, .card-blog:hover:after {
+    transform: scale(1);
+}
+
+.card-grid-space .num {
+    font-size: 3em;
+    margin-bottom: 1.2rem;
+    margin-left: 1rem;
+}
+
+.info {
+    font-size: 1.2em;
+    display: flex;
+    padding: 1em 3em;
+    height: 3em;
+}
+
+.info img {
+    height: 3em;
+    margin-right: 0.5em;
+}
+
+.info h1 {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1285px) {
+    .cards-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .cards-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .info {
+        justify-content: center;
+    }
+    .card-grid-space .num {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cards-wrapper {
+        padding: 4rem 2rem;
+    }
+    .card-blog {
+        max-width: calc(100vw - 4rem);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
+    .info h1 {
+        margin: 0;
+    }
+}
+
+.btnloadmore {
+    border: 2px solid #F5989D;
+    font-family: muli semibold;
+    letter-spacing: -0.5px;
+    color: #F5989D;
+    padding: 10px 50px;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+}
+
+.btnloadmore:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    background-color: #F5989D;
+    color: white;
+}
+
+/* footer */
+.pfootertitle {
+    color: #424242;
+    font-family: muli;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: -1px;
+    margin-right: 70px;
+}
+
+.pfootersubtitle {
+    font-family: hind;
+    font-size: 15px;
+    color: #757575;
+    cursor: pointer;
+}
+
+.pfootersubtitle:hover {
+    transition: all 0.2s;
+    color: #F06292;
+}
+
+.pfooterabout {
+    font-family: muli;
+    font-size: 15px;
+    letter-spacing: -1px;
+    color: #757575;
+    margin-top: 20px;
+}
+
+.pemail {
+    font-size: 15px;
+    font-family: muli;
+    letter-spacing: -1px;
+    color: #F5989D;
+    margin-left: 30px;
+    margin-top: -10px;
 }
