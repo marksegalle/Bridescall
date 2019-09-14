@@ -1,0 +1,292 @@
+@media only screen and (min-width: 1200px) {
+    .con {
+        max-width: 1300px !important;
+    }
+}
+
+body, html {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: white;
+}
+
+.maincontainer {
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0,0.6), rgba(0, 0, 0, 0.1)), url(../Image/mainbg.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.navibar {
+    transition: all 0.2s;
+}
+
+.nav-link {
+    transition: all 0.2s;
+}
+
+.nav-link:hover {
+    color: #F06292 !important;
+}
+
+.navibar:hover {
+    cursor: pointer;
+    color: #F06292 !important;
+    transition: all 0.2s;
+}
+
+.navibar::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: #ffffff .3s;
+    font-family: hind semibold;
+}
+
+.navibar:hover::after {
+    width: 100%;
+    transition: width .3s;
+    font-family: hind semibold;
+}
+
+.pmake {
+    font-family: Mont Demo;
+    font-weight: bold;
+    color: white;
+    font-size: 3.0rem;
+    line-height: 80%;
+}
+
+.btnlearn {
+    font-family: Muli Semibold;
+    letter-spacing: -0.5px;
+    color: white;
+    background-color: #F5989D;
+    padding: 10px 20px;
+    border: 0px;
+    transition: all 0.2s;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pfind {
+    font-family: Raleway Medium;
+    font-size: 1.7rem;
+    color: #212121;
+}
+
+.btnlearnmore {
+    font-family: Raleway semibold;
+    font-size: 0.8rem;
+    color: #616161;
+    border: 1px solid #BDBDBD;
+    background-color: transparent;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btnlearnmore:hover, .btnnavigation:hover {
+    background-color: #F5989D;
+    color: white;
+    border: 1px solid #F5989D;
+}
+
+.card-container {
+    width: 300px !important;
+    height: 330px !important;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-right: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.plocation {
+    font-family: Raleway Semibold;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    bottom: 2%;
+    left: 30%;
+}
+
+.btnnavigation {
+    font-family: Raleway semibold;
+    font-size: 0.8rem;
+    color: #616161;
+    border: 1px solid #BDBDBD;
+    background-color: transparent;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+
+.pfootertitle {
+    color: #424242;
+    font-family: muli;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: -1px;
+    margin-right: 70px;
+}
+
+.pfootersubtitle {
+    font-family: hind;
+    font-size: 15px;
+    color: #757575;
+    cursor: pointer;
+}
+
+.pfootersubtitle:hover {
+    transition: all 0.2s;
+    color: #F06292;
+}
+
+.pfooterabout {
+    font-family: muli;
+    font-size: 15px;
+    letter-spacing: -1px;
+    color: #757575;
+    margin-top: 20px;
+}
+
+.pemail {
+    font-size: 15px;
+    font-family: muli;
+    letter-spacing: -1px;
+    color: #F5989D;
+    margin-left: 30px;
+    margin-top: -10px;
+}
+
+
+.link{
+    text-decoration: none;
+	position: relative;
+	z-index: 1;
+	display: inline-flex;
+	color: #424242;
+	padding-left: 10px;
+	padding-bottom: 5px;
+    padding-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.link::before{
+	content: "";
+	width: 100%;
+	height: 50%;
+	background-image: linear-gradient(to top, #F5989D 25%, rgba(0, 0, 0, 0) 40%);
+	
+	position: absolute;
+	left: 0;
+	bottom: 2px;
+	z-index: -1;
+	
+	will-change: width;
+	transform: rotate(-2deg);
+	transform-origin: left bottom
+}
+
+.link:hover::before{
+	width: 0;
+}
+
+.link::before{
+	transition: width .1s ease-out;
+}
+
+.link:hover::before{
+	transition-duration: .15s;
+}
+
+
+.pservices {
+    font-family: Raleway Semibold;
+    font-size: 1rem;
+    color: #F5989D;
+}
+
+.pwhatweprovide {
+    font-family: Raleway Medium;
+    font-size: 1.7rem;
+    color: #212121;
+    margin-top:-10px;
+}
+
+.plorem {
+    font-family: Raleway;
+    font-size: 1.3rem;
+    color: #424242;
+    margin-top:-5px;
+}
+
+.imgpic {
+    width: 90px;
+	border-radius: 50%;
+	background-color:#eaeef5;
+	padding: 15px
+}
+
+.btnopen {
+    border: 1px solid white;
+    background-color:  transparent;
+    color: white;
+    font-family:  Raleway;
+    font-size: 0.7rem;
+    padding: 5px 10px;
+    position: absolute;
+    top:80%;
+    left: 3%;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.best-card {
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.best-card:hover {
+    -webkit-box-shadow: 1px 1px 15px -7px #000000; 
+                box-shadow: 1px 1px 15px -7px #000000;
+}
+
+.card-img-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.card-img-wrap:after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: opacity .25s;
+}
+.card-img-wrap img {
+  transition: transform .25s;
+  width: 100%;
+}
+.card-img-wrap:hover img {
+  transform: scale(1.2);
+}
+.card-img-wrap:hover:after {
+  opacity: 1;
+}
+
+.pmicro {
+    font-family: Raleway Medium;
+    font-size: 1.5rem;
+}
