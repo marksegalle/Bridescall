@@ -1,0 +1,95 @@
+@media only screen and (min-width: 1200px) {
+    .con {
+        max-width: 1300px !important;
+    }
+}
+
+body, html {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #FAFAFA;
+}
+
+.navibar {
+    transition: all 0.2s;
+}
+
+.nav-link {
+    transition: all 0.2s;
+}
+
+.nav-link:hover {
+    color: #F06292 !important;
+}
+
+.navibar:hover {
+    cursor: pointer;
+    color: #F06292 !important;
+    transition: all 0.2s;
+}
+
+.navibar::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: #ffffff .3s;
+    font-family: hind semibold;
+}
+
+.navibar:hover::after {
+    width: 100%;
+    transition: width .3s;
+    font-family: hind semibold;
+}
+
+.pbacktodeals {
+    font-family: muli semibold;
+    letter-spacing: -0.5px;
+    color: #F5989D;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 1rem;
+}
+
+.pitemname {
+    font-family: muli;
+    font-weight: bold;
+    color: #424242;
+    font-size: 2rem;
+    letter-spacing: -0.5px;
+    margin-top: 10px;
+    line-height: 120%;
+}
+
+.pitemlocation {
+    font-family: muli;
+    font-weight: bold;
+    color: #F5989D;
+    font-size: 1rem;
+    letter-spacing: -0.5px;
+    border-bottom: 2px solid #F5989D;
+    margin-top: -20px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pmorephotos {
+    font-family: hind semibold;
+    color: white;
+    font-size: 2rem;
+}
+
+.pseemore {
+    font-family: hind medium;
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.7);
+}
