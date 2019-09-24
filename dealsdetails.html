@@ -9,6 +9,7 @@
     <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
     <link href='Css/dealsdetail.css' rel='stylesheet' type='text/css'>
     <link href='Css/glider.min.css' rel='stylesheet' type='text/css'>
+    <link href='Css/lightbox.css' rel='stylesheet' type='text/css'>
     <script src='Script\bootstrap.min.js'></script>
     <title>Document</title>
 </head>
@@ -20,8 +21,8 @@
                 <button class="navbar-toggler" data-toggle="navbar-collapse" data-target="#collapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <nav class="navbar-brand" href="#">
-                    <a href="#"><img src="Image/logo.png" class="img-fluid d-inline-block align-top"
+                <nav class="navbar-brand" href="index.html">
+                    <a href="index.html"><img src="Image/logo.png" class="img-fluid d-inline-block align-top"
                             style="width: 150px;"></a>
                 </nav>
                 <div class="collapse navbar-collapse" id="collapse">
@@ -57,29 +58,101 @@
     <div class="container">
         <div class="row" style="margin-top: 30px;">
             <div class="col-lg-12">
-                <p class="pbacktodeals"><img src="Image/left-arrow.png" class="img-fluid"
-                        style="width:20px;margin-right: 10px;">Back to deals</p>
-                <p class="pitemname">San Agustin Church</p>
+                <a href="deals.html" class="abacktodeals">
+                    <p class="pbacktodeals"><img src="Image/left-arrow.png" class="img-fluid"
+                            style="width:20px;margin-right: 10px;">Back to deals</p>
+                </a>
+                <p class="pitemname">Hotel De Castel</p>
                 <p><img src="Image/locationpink.png" class="img-fluid" style="width:20px;margin-right: 10px;"><span
                         class="pitemlocation">Manila, Metro Manila</span></p>
             </div>
         </div>
         <div class="row" style="margin-top: 10px;">
             <div class="col-lg-8">
-                <img src="Image/wedding.jpg" class="img-fluid" style="width:auto;border-radius: 10px;-webkit-box-shadow: 1px 1px 15px -7px #000000; 
-                box-shadow: 1px 1px 17px -7px #000000;">
+                <a href="Image/hotel1.jpg" data-lightbox="roadtrip"> <img src="Image/hotel1.jpg" class="img-fluid"
+                        style="width:auto;border-radius: 10px;-webkit-box-shadow: 1px 1px 15px -7px #000000; 
+                    box-shadow: 1px 1px 17px -7px #000000;"></a>
             </div>
             <div class="col-lg-4">
-                <div style="position:relative" class = "text-center">
-                    <img src="Image/wedding.jpg" class="img-fluid" style="width: auto;border-radius: 10px;-webkit-box-shadow: 1px 1px 15px -7px #000000; 
+                <div style="position:relative" class="text-center">
+                    <a href="Image/wedding.jpg" data-lightbox="roadtrip"><img src="Image/hotel2.jpg" class="img-fluid"
+                            style="width: auto;border-radius: 10px;-webkit-box-shadow: 1px 1px 15px -7px #000000; 
                         box-shadow: 1px 1px 17px -7px #000000;filter:brightness(50%);cursor: pointer;">
-                    <div class="centered"><span class = "pmorephotos">+14</span><p class = "pseemore">see more photos</p></div>
+                        <div class="centered"><span class="pmorephotos">+14</span>
+                            <p class="pseemore">see more photos</p>
+                        </div>
+                    </a>
                 </div>
-                <img src="Image/wedding.jpg" class="img-fluid" style="width: auto;border-radius: 10px;-webkit-box-shadow: 1px 1px 15px -7px #000000; 
+                <img src="Image/hotel3.jpg" class="img-fluid" style="width: auto;border-radius: 10px;-webkit-box-shadow: 1px 1px 15px -7px #000000; 
                  box-shadow: 1px 1px 17px -7px #000000;margin-top:15px;">
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-lg-8">
+                <p class="pdetails">Details</p>
+                <p class="pdetailsdesc">The San Agustin Church was the only building left intact after the destruction
+                    of Intramuros in WWII.
+                    Built between 1587 and 1606, it is the oldest church in the Philippines. The massive facade conceals
+                    an ornate interior filled with objects of great historical and cultural merit. Note the intricate
+                    trompe l’oeil frescos on the vaulted ceiling. Be sure to check out the tropical cloisters as well as
+                    the slightly shabby gardens out the back.</p>
+                <div class="row" style="margin-top: 30px;display:none;">
+                    <div class="col-lg-3">
+                        <p class="pguest"><img src="Image/team.png" class="img-fluid"
+                                style="margin-right: 10px;margin-top:-10px;"><b style="color: black;">4</b> Guest</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="pguest"><img src="Image/bed.png" class="img-fluid"
+                                style="margin-right: 10px;margin-top:-10px;"><b style="color: black;">3</b> Bedrooms</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="pguest"><img src="Image/bathtub.png" class="img-fluid"
+                                style="margin-right: 10px;margin-top:-10px;"><b style="color: black;">2</b> Bathroom</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-lg-8">
+                <p class="pdetails">Popular facilities</p>
+                <div class="row" style="margin-top:30px;">
+                    <div class="col-lg-6">
+                        <p class="pfacilities"><img src="Image/wifi.png" class="img-fluid"
+                                style="margin-right: 25px;width:20px;margin-top:-5px;">Free Wifi</p>
+                        <p class="pfacilities"><img src="Image/ice.png" class="img-fluid"
+                                style="margin-right: 25px;width:20px;margin-top:-5px;">Conditioned Air</p>
+                        <p class="pfacilities"><img src="Image/pet.png" class="img-fluid"
+                                style="margin-right: 25px;width:20px;margin-top:-5px;">Pet Friendly</p>
+                        <p class="pfacilities"><img src="Image/disabled.png" class="img-fluid"
+                                style="margin-right: 25px;width:20px;margin-top:-5px;">Disabled Access</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="pfacilities"><img src="Image/parking.png" class="img-fluid"
+                                style="margin-right: 25px;width:20px;margin-top:-5px;">Free Parking</p>
+                        <p class="pfacilities"><img src="Image/lift.png" class="img-fluid"
+                                style="margin-right: 25px;width:20px;margin-top:-5px;">Lift</p>
+                        <p class="pfacilities"><img src="Image/dumbbell.png" class="img-fluid"
+                                style="margin-right: 25px;width:20px;margin-top:-5px;">Gym Centre</p>
+                        <p class="pfacilities"><img src="Image/plant.png" class="img-fluid"
+                                style="margin-right: 25px;width:20px;margin-top:-5px;">Spa & Wellness Centre</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class  
 </body>
+
+<script src='Script\lightbox.js'></script>
+<script>
+    lightbox.option({
+        'resizeDuration': 300,
+        'wrapAround': true
+    })
+</script>
 
 </html>

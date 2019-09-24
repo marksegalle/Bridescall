@@ -1,3 +1,18 @@
+@font-face {
+    font-family: "muli";
+    src: url("../Font/Muli/muli/Muli.ttf");
+}
+
+@font-face {
+    font-family: "Muli";
+    src: url("../Font/Muli/muli/Muli.ttf");
+}
+
+@font-face {
+    font-family: "Keep Calm";
+    src: url("../Font/keep calm/KeepCalm-Medium.ttf");
+}
+
 @media only screen and (min-width: 1200px) {
     .con {
         max-width: 1300px !important;
@@ -46,6 +61,10 @@ body, html {
     font-family: hind semibold;
 }
 
+.abacktodeals:hover {
+    text-decoration: none !important;
+}
+
 .pbacktodeals {
     font-family: muli semibold;
     letter-spacing: -0.5px;
@@ -56,13 +75,14 @@ body, html {
 }
 
 .pitemname {
-    font-family: muli;
+    font-family: Keep Calm;
     font-weight: bold;
     color: #424242;
-    font-size: 2rem;
+    font-size: 2.5rem;
     letter-spacing: -0.5px;
-    margin-top: 10px;
+    padding-top: 25px;
     line-height: 120%;
+    padding-bottom: -20px;
 }
 
 .pitemlocation {
@@ -72,7 +92,6 @@ body, html {
     font-size: 1rem;
     letter-spacing: -0.5px;
     border-bottom: 2px solid #F5989D;
-    margin-top: -20px;
 }
 
 .centered {
@@ -92,4 +111,33 @@ body, html {
     font-family: hind medium;
     font-size: 1.2rem;
     color: rgba(255,255,255,0.7);
+}
+
+.pdetails {
+    font-family: Keep Calm;
+    font-weight: bold;
+    color: #212121;
+    font-size: 1.4rem;
+}
+
+.pdetailsdesc {
+    font-family: muli;
+    color: #424242;
+    letter-spacing: -0.5px;
+    font-size: 1rem;
+}
+
+.pguest {
+    font-family: muli Semibold;
+    color: #616161;
+    letter-spacing: -0.5px;
+    font-size: 1rem;
+}
+
+.pfacilities {
+    font-family: muli;
+    font-weight: bold;
+    color: #8860A8;
+    letter-spacing: -0.5px;
+    font-size: 1rem;
 }
