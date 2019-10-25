@@ -10,17 +10,42 @@
     }
 }
 
-@media only screen and (min-width: 1366px) {
-    .container {
-        max-width: 1300px !important;
+@media only screen and (max-width: 411px) {
+    .btncreate {
+        display: none;
     }
-    .consmall {
-        max-width: 1000px !important;
+    .pafree {
+        font-size: 1.5rem !important;
     }
-    .conxsmall {
-        max-width: 900px !important;
+    .pafreesub {
+        font-size: 1.2rem !important;
+    }
+    .rowcheck {
+        margin-top: 40px !important;
+    }
+    .box1 {
+        margin-top: 20px !important;
+    }
+    .box {
+        width: auto !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    .titletimeline {
+        line-height: 140% !important;
+        font-size: 1.5rem !important;
+    }
+    .colregistry, .coldeals, .colshop {
+        padding: 10px 0px !important;
+    }
+    .row1{
+        margin-top: 50px !important;
+    }
+    .colimage {
+        display: none !important;
     }
 }
+
 
 @font-face {
     font-family: "muli";
