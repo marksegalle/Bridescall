@@ -10,8 +10,21 @@
     }
 }
 
+@media only screen and (min-width: 1366px) {
+    .container {
+        max-width: 1300px !important;
+    }
+    .consmall {
+        max-width: 1000px !important;
+    }
+    .conxsmall {
+        max-width: 900px !important;
+    }
+}
+
+
 @font-face {
-    font-family: "Muli";
+    font-family: "muli";
     src: url("../Font/Muli/muli/Muli.ttf");
 }
 
@@ -42,7 +55,7 @@ body, html {
 }
 
 .nav-link {
-    font-family: roboto;
+    font-family: roboto,sans-serif;
     font-size: 0.9rem;
     cursor: pointer;
     text-transform: uppercase;
