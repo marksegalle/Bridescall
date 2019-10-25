@@ -22,7 +22,6 @@
     }
 }
 
-
 @font-face {
     font-family: "muli";
     src: url("../Font/Muli/muli/Muli.ttf");
@@ -37,7 +36,6 @@
     font-family: "Baroque Script";
     src: url("../Font/baroque-script/BaroqueScript.ttf");
 }
-
 
 body, html {
     width: 100%;
@@ -55,7 +53,7 @@ body, html {
 }
 
 .nav-link {
-    font-family: roboto,sans-serif;
+    font-family: roboto, sans-serif;
     font-size: 0.9rem;
     cursor: pointer;
     text-transform: uppercase;
@@ -616,9 +614,10 @@ body, html {
     border-radius: 15px;
     border: 2px solid white;
     -webkit-animation: intro 1s;
-            animation: intro 1s;
-  }
-  .scroll {
+    animation: intro 1s;
+}
+
+.scroll {
     display: block;
     width: 3px;
     height: 3px;
@@ -626,50 +625,61 @@ body, html {
     border-radius: 4px;
     background: white;
     -webkit-animation: finger 1s infinite;
-            animation: finger 1s infinite;
-  }
-  @-webkit-keyframes intro {
+    animation: finger 1s infinite;
+}
+
+@-webkit-keyframes intro {
     0% {
-      opacity: 0;
-      -webkit-transform: translateY(40px);
-              transform: translateY(40px);
+        opacity: 0;
+        -webkit-transform: translateY(40px);
+        transform: translateY(40px);
     }
     100% {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
-  }
-  @keyframes intro {
+}
+
+@keyframes intro {
     0% {
-      opacity: 0;
-      -webkit-transform: translateY(40px);
-              transform: translateY(40px);
+        opacity: 0;
+        -webkit-transform: translateY(40px);
+        transform: translateY(40px);
     }
     100% {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
-  }
-  @-webkit-keyframes finger {
+}
+
+@-webkit-keyframes finger {
     0% {
-      opacity: 1;
+        opacity: 1;
     }
     100% {
-      opacity: 0;
-      -webkit-transform: translateY(20px);
-              transform: translateY(20px);
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
     }
-  }
-  @keyframes finger {
+}
+
+@keyframes finger {
     0% {
-      opacity: 1;
+        opacity: 1;
     }
     100% {
-      opacity: 0;
-      -webkit-transform: translateY(20px);
-              transform: translateY(20px);
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
     }
-  }
-  
+}
+
+.card-img-top {
+    transition: all 0.2s;
+}
+
+.card-img-top:hover {
+    filter: brightness(50%);
+}
