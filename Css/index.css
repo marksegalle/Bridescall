@@ -104,17 +104,15 @@ body, html {
 }
 
 .btnview {
-    font-family: raleway medium;
-    color: #37474F;
-    font-size: 1.1rem;
-    padding: 15px 10px;
-    padding-bottom: 10px;
-    width: 200px;
-    margin-top: 10px;
-    background-color: #E48D9E;
-    border: 0px;
-    color: white;
+    font-family: Raleway semibold;
+    color: #E48D9E;
+    font-size: 1rem;
+    background-color: white;
+    border: 2px solid #E48D9E;
+    padding: 14px 40px;
+    margin-top: 20px;
     cursor: pointer;
+    transition: all 0.2s;
 }
 
 .ptitletrip {
