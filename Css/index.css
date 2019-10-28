@@ -172,7 +172,7 @@ body, html {
 }
 
 .card-title {
-    font-family: Muli;
+    font-family: Roboto, sans-serif;
     color: #263238;
     font-size: 1.1rem;
     letter-spacing: -0.5px;
@@ -181,14 +181,14 @@ body, html {
 }
 
 .card-text {
-    font-family: muli semibold;
+    font-family: roboto medium, sans-serif;
     color: #455A64;
     font-size: 0.9rem;
     letter-spacing: -0.5px;
 }
 
 .pmuted {
-    font-family: muli semibold;
+    font-family: roboto medium, sans-serif;
     font-size: 0.9rem;
     transition: all 0.2s;
     cursor: pointer;
@@ -212,7 +212,7 @@ body, html {
 }
 
 .ptop {
-    font-family: muli;
+    font-family: roboto, sans-serif;
     font-size: 0.8rem;
     color: #263238;
     font-weight: bold;
@@ -228,7 +228,7 @@ body, html {
 }
 
 .pfooter {
-    font-family: muli semibold;
+    font-family: roboto medium;
     color: #263238;
     font-size: 1rem;
     letter-spacing: -0.4px;
@@ -282,12 +282,7 @@ body, html {
     max-width: 400px;
 }
 
-/*==================================
-      TIMELINE
-  ==================================*/
 
-/*-- GENERAL STYLES
-  ------------------------------*/
 
 .timeline {
     line-height: 1.4em;
@@ -301,7 +296,6 @@ body, html {
     line-height: inherit;
 }
 
-/*----- TIMELINE ITEM -----*/
 
 .timeline-item {
     padding-left: 40px;
@@ -312,7 +306,6 @@ body, html {
     padding-bottom: 0;
 }
 
-/*----- TIMELINE INFO -----*/
 
 .timeline-info {
     font-size: 12px;
@@ -323,7 +316,7 @@ body, html {
     white-space: nowrap;
 }
 
-/*----- TIMELINE MARKER -----*/
+
 
 .timeline-marker {
     position: absolute;
@@ -415,9 +408,7 @@ body, html {
     margin: 0;
 }
 
-/*----------------------------------------------
-      MOD: TIMELINE SPLIT
-  ----------------------------------------------*/
+
 
 @media (min-width: 768px) {
     .timeline-split .timeline, .timeline-centered .timeline {
@@ -446,9 +437,6 @@ body, html {
     }
 }
 
-/*----------------------------------------------
-      MOD: TIMELINE CENTERED
-  ----------------------------------------------*/
 
 @media (min-width: 992px) {
     .timeline-centered, .timeline-centered .timeline-item, .timeline-centered .timeline-info, .timeline-centered .timeline-marker, .timeline-centered .timeline-content {
@@ -507,10 +495,6 @@ body, html {
     }
 }
 
-/*----------------------------------------------
-      MOD: MARKER OUTLINE
-  ----------------------------------------------*/
-
 .marker-outline .timeline-marker:before {
     background: transparent;
     border-color: #FF6B6B;
@@ -551,7 +535,7 @@ body, html {
 }
 
 .pafree {
-    font-family: Proxima Nova;
+    font-family: Roboto, sans-serif;
     color: #263238;
     font-weight: bold;
     width: 90%;
@@ -559,13 +543,14 @@ body, html {
 }
 
 .pafreesub {
-    font-family: Raleway semibold;
+    font-family: Roboto medium, sans-serif;
     color: #37474F;
     font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .btnbuy {
-    font-family: Raleway semibold;
+    font-family: Roboto medium, sans-serif;
     color: #E48D9E;
     font-size: 1rem;
     background-color: white;
@@ -573,6 +558,7 @@ body, html {
     padding: 14px 10px;
     width: 250px;
     margin-top: 20px;
+    font-weight: 500;
     cursor: pointer;
     transition: all 0.2s;
 }
@@ -587,21 +573,22 @@ body, html {
 }
 
 .pcheck {
-    font-family: Raleway semibold;
+    font-family: Roboto, sans-serif;
     color: #263238;
+    font-weight: 500;
     font-size: 1rem;
     padding-right: 10px;
 }
 
 .ptitlecard {
-    font-family: Proxima Nova;
+    font-family: Roboto, sans-serif;
     color: #263238;
     font-size: 1.5rem;
     font-weight: bold;
 }
 
 .ptitlecardsub {
-    font-family: Proxima Nova;
+    font-family: Roboto, sans-serif;
     color: #37474F;
     font-size: 1rem;
     width: 80%;
@@ -609,10 +596,11 @@ body, html {
 }
 
 .btncheck {
-    font-family: Proxima Nova semibold;
+    font-family: Roboto, sans-serif;
     color: #E48D9E;
     font-size: 1rem;
     padding: 8px 15px;
+    font-weight: 500;
     border: 2px solid #E48D9E;
     background-color: transparent;
     cursor: pointer;
