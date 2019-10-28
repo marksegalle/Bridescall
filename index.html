@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='Script\jquery-3.3.1.min.js'></script>
     <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
     <link href='Css/bootstrap-combobox.css' rel='stylesheet' type='text/css'>
     <link href='Css/index.css' rel='stylesheet' type='text/css'>
     <script src='Script\bootstrap.min.js'></script>
-    <script src='Script\card.js'></script>
-    <script src='Script\jquery-3.3.1.min.js'></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://use.typekit.net/bkt6ydm.js"></script>
@@ -446,7 +445,9 @@
 
     AOS.init();
 
-
+    $(".navbar-toggler").click(function(){
+        $('.imglogo').css("padding-left","0px !important");
+    })
 
 </script>
 
