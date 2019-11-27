@@ -11,9 +11,6 @@
 }
 
 @media only screen and (max-width: 480px) {
-    .btncreate {
-        display: none;
-    }
     .pbanner {
         font-size: 1.4rem !important;
     }
@@ -102,7 +99,7 @@ body, html {
     cursor: pointer;
     border: 2px solid white;
     background-color: transparent;
-    padding: 8px 15px;
+    padding: 8px 15px !important;
     transition: all 0.2s;
 }
 
